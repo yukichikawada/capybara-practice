@@ -5,21 +5,13 @@ header {
   color: white;
   font-family: Arial;
 }
-
-header .h1 {
-  font-weight: bold;
-  font-size: 24px;
-
-}
-
-.header {
-
-}
 .header-logo {
   display: flex;
   padding: 10px;
   border-right: 1px solid white;
   border-left: 1px solid white;
+  font-weight: bold;
+  font-size: 24px;
 }
 .header-nav {
   display: flex;
@@ -32,8 +24,11 @@ header .h1 {
   flex-direction: row;
 }
 li {
-  padding: 10px;
   border-right: 1px solid white;
+}
+li a {
+  display: inline-block;
+  padding: 15px 10px 15px 10px;
 }
 ul li:first-child {
   border-left: 1px solid white;
