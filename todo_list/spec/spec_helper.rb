@@ -94,3 +94,8 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+def bob_with_run
+  let(:bob) { User.create!(username: 'Bob', password: 'asdfgh') }
+  let(:bob_goal) { bob.goals.create!(task: 'run more', body: 'get exercised') }
+end
